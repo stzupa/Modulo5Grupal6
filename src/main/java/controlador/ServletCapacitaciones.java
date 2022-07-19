@@ -92,7 +92,6 @@ public class ServletCapacitaciones extends HttpServlet {
 		request.setAttribute("capacitaciones", service.leerCapacitaciones());
 		getServletContext().getRequestDispatcher(jsp).forward(request, response);
 		
-		doGet(request, response);
 	}
 
 }
