@@ -34,9 +34,7 @@
 		</div>
 	
 	</main>
-	
-	<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
-	
+		
 	<script src="//cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
 	
 	<link href="//cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css" rel="stylesheet">

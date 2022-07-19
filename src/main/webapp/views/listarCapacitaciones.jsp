@@ -38,10 +38,10 @@
 							<td><c:out value="${cap.getLugar()}"></c:out></td>
 							<td><c:out value="${cap.getDuracion()}"></c:out></td>
 							<td><c:out value="${cap.getC_asistentes()}"></c:out></td>
-							<td><a href="${pageContext.request.contextPath}/capacitaciones?op=edit&id=${cap.getId()}">
+							<td><!-- a href="${pageContext.request.contextPath}/capacitaciones?op=edit&id=${cap.getId()}">
 								<i class="fa-solid fa-pen-to-square"></i></a> | 
 								<a href="${pageContext.request.contextPath}/capacitaciones?op=del&id=${cap.getId()}">
-								<i class="fa-solid fa-trash-can"></i></a>
+								<i class="fa-solid fa-trash-can"></i></a-->
 							</td>
 						</tr>	
 					</c:forEach>				
@@ -51,8 +51,6 @@
 		</div>
 	
 	</main>
-	
-	<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
 	
 	<script src="//cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
 	

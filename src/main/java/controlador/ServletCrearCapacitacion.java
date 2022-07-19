@@ -47,7 +47,7 @@ public class ServletCrearCapacitacion extends HttpServlet {
 		List<Capacitacion> capacitaciones = (List<Capacitacion>) sesion.getAttribute("capacitaciones");
 		
 		Capacitacion cap = new Capacitacion();
-		
+				
 		cap.setRut(Integer.parseInt(request.getParameter("rutCliente")));
 		cap.setDia(request.getParameter("diaSemana"));
 		cap.setHora(request.getParameter("hora"));
@@ -63,6 +63,40 @@ public class ServletCrearCapacitacion extends HttpServlet {
 		
 		getServletContext().getRequestDispatcher("/views/messageCreaCap.jsp").forward(request, response);		
 		
+	}
+	
+	private String diaSemana(String dia) {
+		
+		System.out.println(dia);
+		
+		String diaString = "";
+		
+		switch (dia) {
+		case "1":
+			diaString = "Lunes";
+			break;
+		case "2":
+			diaString = "Martes";
+			break;
+		case "3":
+			diaString = "Miercoles";
+			break;
+		case "4":
+			diaString = "Jueves";
+			break;
+		case "5":
+			diaString = "Viernes";
+			break;
+		case "6":
+			diaString = "Sabado";
+			break;
+		case "7":
+			diaString = "Domingo";
+			break;
+		default:
+			break;
+		}		
+		return diaString;		
 	}
 
 }
