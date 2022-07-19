@@ -16,7 +16,7 @@
 
 				<h3>Crear Capacitación</h3>
 
-				<form action="${pageContext.request.contextPath}/crearCap" method="post">
+				<form action="${pageContext.request.contextPath}/capacitaciones?op=new" method="post">
 					<div class="col-4">
 						<label for="rutCliente" class="form-label">Rut Cliente</label> 
 						<input type="text" class="form-control"	id="rutCliente" name="rutCliente">

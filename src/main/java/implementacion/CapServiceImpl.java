@@ -15,4 +15,9 @@ public class CapServiceImpl implements ICapService {
 		return dao.leerCapacitaciones();
 	}
 
+	@Override
+	public void crearCapacitacion(Capacitacion id) {
+		dao.crear(id);		
+	}
+
 }

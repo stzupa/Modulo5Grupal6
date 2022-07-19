@@ -25,6 +25,7 @@
 						<th>Lugar</th>
 						<th>Duración</th>
 						<th>Asistentes</th>
+						<th>Acciones</th>
 					</tr>
 				</thead>
 				<tbody>
@@ -37,6 +38,11 @@
 							<td><c:out value="${cap.getLugar()}"></c:out></td>
 							<td><c:out value="${cap.getDuracion()}"></c:out></td>
 							<td><c:out value="${cap.getC_asistentes()}"></c:out></td>
+							<td><a href="${pageContext.request.contextPath}/capacitaciones?op=edit&id=${cap.getId()}">
+								<i class="fa-solid fa-pen-to-square"></i></a> | 
+								<a href="${pageContext.request.contextPath}/capacitaciones?op=del&id=${cap.getId()}">
+								<i class="fa-solid fa-trash-can"></i></a>
+							</td>
 						</tr>	
 					</c:forEach>				
 				</tbody>

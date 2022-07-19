@@ -17,9 +17,9 @@
 					<li class="nav-item"><a class="nav-link"
 						href="${pageContext.request.contextPath}/contacto">Contacto</a></li>
 					<li class="nav-item"><a class="nav-link"
-						href="${pageContext.request.contextPath}/crearCap">Crear Capacitación</a></li>
+						href="${pageContext.request.contextPath}/capacitaciones?op=new">Crear Capacitación</a></li>
 					<li class="nav-item"><a class="nav-link"
-						href="${pageContext.request.contextPath}/listarCap">Listar Capacitaciones</a></li>
+						href="${pageContext.request.contextPath}/capacitaciones?op=list">Listar Capacitaciones</a></li>
 					<li class="nav-item"><a class="nav-link"
 						href="${pageContext.request.contextPath}/listarUser">Listar Usuarios</a></li>
 					<li class="nav-item"><a class="nav-link"

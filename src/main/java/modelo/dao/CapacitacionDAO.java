@@ -14,7 +14,19 @@ public class CapacitacionDAO implements ICapacitacionDAO {
 
 	@Override
 	public void crear(Capacitacion cap) {
-		// TODO Auto-generated method stub
+		
+		try {
+		String query = "INSERT INTO capacitacion (rut, dia, hora, lugar, duracion, c_asistentes) Values " +
+				"("+ cap.getRut() + ", '" + cap.getDia() + "', '" + cap.getHora() + "', '" + cap.getLugar() + 
+				"', '" + cap.getDuracion() + "', " + cap.getC_asistentes() + ")";
+		
+		Connection con = Conexion.getConexion();
+		Statement smt = con.createStatement();
+		smt.execute(query);
+		} catch (SQLException e) {
+			System.out.println("Error en conexion crear");
+			e.printStackTrace();
+		}
 
 	}
 
